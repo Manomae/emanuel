@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio de Animes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <h1>AnimeVerse</h1>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#animes">Animes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <p class="tag">Portfólio temático</p>
+        <h2>Uma seleção dos animes mais marcantes</h2>
+        <p>
+          Descubra histórias épicas, personagens inesquecíveis e mundos que
+          inspiram criatividade.
+        </p>
+        <a href="#animes" class="btn">Explorar catálogo</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="sobre" class="section">
+        <h3>Sobre o projeto</h3>
+        <p>
+          Este portfólio foi criado para apresentar recomendações de animes em
+          diferentes estilos, com foco em narrativa, impacto cultural e visual.
+        </p>
+      </section>
+
+      <section id="animes" class="section">
+        <div class="section-title">
+          <h3>Destaques</h3>
+          <button id="toggleTheme" aria-label="Alternar tema">🌙 Tema</button>
+        </div>
+
+        <div class="grid" id="animeGrid"></div>
+      </section>
+
+      <section id="contato" class="section contact">
+        <h3>Vamos conversar?</h3>
+        <p>
+          Quer mais recomendações? Me chame no
+          <a href="mailto:animeverse@otaku.com">animeverse@otaku.com</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 AnimeVerse • Criado com paixão por animes.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
