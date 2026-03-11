@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnimeVerse 4K • Portfólio de Animes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <h1>AnimeVerse 4K</h1>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#animes">Animes</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#videos">Vídeos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <p class="tag">Portfólio premium • 4K Experience</p>
+        <h2>Seu universo otaku com imagens e trailers em alta definição</h2>
+        <p>
+          Explore capas icônicas, artes em ultra resolução e trailers
+          cinematográficos em 4K dos animes mais impactantes da atualidade.
+        </p>
+        <a href="#animes" class="btn">Explorar catálogo</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="sobre" class="section">
+        <h3>Sobre o projeto</h3>
+        <p>
+          Este portfólio foi atualizado para destacar animes com conteúdo visual
+          interativo, usando cards dinâmicos, galeria em lightbox e vídeos em
+          alta qualidade para uma experiência moderna.
+        </p>
+      </section>
+
+      <section id="animes" class="section">
+        <div class="section-title">
+          <h3>Destaques</h3>
+          <div class="actions">
+            <input
+              type="text"
+              id="searchAnime"
+              placeholder="Buscar anime..."
+              aria-label="Buscar anime"
+            />
+            <button id="toggleTheme" aria-label="Alternar tema">🌙 Tema</button>
+          </div>
+        </div>
+        <div class="grid" id="animeGrid"></div>
+      </section>
+
+      <section id="galeria" class="section">
+        <h3>Galeria Interativa 4K</h3>
+        <p>Clique nas imagens para ampliar em tela destacada.</p>
+        <div class="gallery" id="galleryGrid"></div>
+      </section>
+
+      <section id="videos" class="section">
+        <h3>Trailers em 4K</h3>
+        <p>Prévia dos melhores trailers em qualidade ultra HD.</p>
+        <div class="video-grid" id="videoGrid"></div>
+      </section>
+
+      <section id="contato" class="section contact">
+        <h3>Vamos conversar?</h3>
+        <p>
+          Quer uma versão personalizada do seu portfólio otaku?
+          <a href="mailto:animeverse@otaku.com">animeverse@otaku.com</a>
+        </p>
+      </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="closeLightbox" class="close-lightbox" aria-label="Fechar imagem ampliada">×</button>
+      <img id="lightboxImage" alt="Imagem ampliada de anime" />
+      <p id="lightboxCaption"></p>
+    </div>
+
+    <footer>
+      <p>© 2026 AnimeVerse 4K • Criado com paixão por animes.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
